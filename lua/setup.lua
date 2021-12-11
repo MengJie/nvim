@@ -5,4 +5,5 @@ require 'tmux'.setup {
     cycle_navigation = false,
   },
 }
+require 'hop'.setup {}
 

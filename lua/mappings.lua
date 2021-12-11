@@ -21,8 +21,11 @@ end)
 vp.nnoremap(';', ':')
 
 -- leader q
-vp.nnoremap('<leader>q', ':q<CR>')
-vp.nnoremap('<leader>w', ':w<CR>')
+vp.nnoremap('<leader>q',  ':q<CR>')
+vp.nnoremap('<leader>fs', ':w<CR>')
+
+-- hop
+vp.nnoremap('<leader>w', ':HopWord<CR>')
 
 -- nvim tree
 vp.nnoremap('<C-e>', ':NvimTreeToggle<CR>')

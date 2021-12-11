@@ -32,6 +32,8 @@ return require 'packer'.startup(
     }
     -- tmux
     use 'aserowy/tmux.nvim'
+    -- hop, easymotion
+    use 'phaazon/hop.nvim'
 
     if packer_bootstrap then
       require('packer').sync()
