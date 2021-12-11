@@ -20,12 +20,15 @@ return require 'packer'.startup(
     use 'sainnhe/sonokai'
     -- better highlighting
     use 'nvim-treesitter/nvim-treesitter'
-
+    -- nvim tree
     use {
       'kyazdani42/nvim-tree.lua',
-      requires = {
-        'kyazdani42/nvim-web-devicons',
-      }
+      requires = { 'kyazdani42/nvim-web-devicons' }
+    }
+    -- telescope
+    use {
+      'nvim-telescope/telescope.nvim',
+      requires = { 'nvim-lua/plenary.nvim' }
     }
 
     if packer_bootstrap then

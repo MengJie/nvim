@@ -30,7 +30,16 @@ function reload_my_modules()
   local vimp = require 'vimp'
   vimp.unmap_all()
   unload_my_modules()
-  vim.cmd('silent wa') -- save all
+
+  -- save all
+  vim.cmd('silent wa')
+
+  -- 设置好 reload 的快捷键，即使重新加载失败了，
+  -- 这个快捷键也不会丢
+  vimp.bind({'override'}, '<leader>r', function()
+    reload_my_modules()
+  end)
+
   dofile(vim.fn.stdpath('config') .. '/init.lua')
   print("Configuration Reloaded!")
 end
