@@ -30,6 +30,8 @@ return require 'packer'.startup(
       'nvim-telescope/telescope.nvim',
       requires = { 'nvim-lua/plenary.nvim' }
     }
+    -- tmux
+    use 'aserowy/tmux.nvim'
 
     if packer_bootstrap then
       require('packer').sync()

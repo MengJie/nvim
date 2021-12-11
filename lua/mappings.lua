@@ -20,6 +20,10 @@ end)
 -- map ; to :
 vp.nnoremap(';', ':')
 
+-- leader q
+vp.nnoremap('<leader>q', ':q<CR>')
+vp.nnoremap('<leader>w', ':w<CR>')
+
 -- nvim tree
 vp.nnoremap('<C-e>', ':NvimTreeToggle<CR>')
 
@@ -29,8 +33,14 @@ vp.nnoremap('<C-p>',      function() require 'telescope.builtin'.find_files() en
 vp.nnoremap('<leader>ss', function() require 'telescope.builtin'.live_grep() end)
 
 -- window navigation
-vp.nnoremap('<C-j>', '<C-w>j')
-vp.nnoremap('<C-k>', '<C-w>k')
-vp.nnoremap('<C-h>', '<C-w>h')
-vp.nnoremap('<C-l>', '<C-w>l')
+vp.nnoremap('<C-j>', function() require 'tmux'.move_bottom() end)
+vp.nnoremap('<C-k>', function() require 'tmux'.move_top() end)
+vp.nnoremap('<C-h>', function() require 'tmux'.move_left() end)
+vp.nnoremap('<C-l>', function() require 'tmux'.move_right() end)
+
+-- window resize
+vp.nnoremap('<M-j>', function() require 'tmux'.resize_bottom() end)
+vp.nnoremap('<M-k>', function() require 'tmux'.resize_top() end)
+vp.nnoremap('<M-h>', function() require 'tmux'.resize_left() end)
+vp.nnoremap('<M-l>', function() require 'tmux'.resize_right() end)
 

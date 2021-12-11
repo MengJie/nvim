@@ -16,6 +16,9 @@ o.autoindent = true -- reproduce the indentation of the previous line
 -- line number
 o.number = true
 
+-- no wrap
+o.wrap = false
+
 -- color scheme
 o.termguicolors = true
 
