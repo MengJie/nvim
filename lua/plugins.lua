@@ -12,9 +12,14 @@ vim.cmd [[packadd packer.nvim]]
 
 return require 'packer'.startup(
   function()
+    -- 包管理
     use 'wbthomason/packer.nvim'
-
+    -- 用于设置key mapping的库
     use 'svermeulen/vimpeccable'
+    -- color scheme
+    use 'sainnhe/sonokai'
+    -- better highlighting
+    use 'nvim-treesitter/nvim-treesitter'
 
     use {
       'kyazdani42/nvim-tree.lua',

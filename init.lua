@@ -37,3 +37,5 @@ end
 
 load_my_modules()
 
+vim.cmd "color sonokai"
+

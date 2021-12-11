@@ -16,3 +16,14 @@ o.autoindent = true -- reproduce the indentation of the previous line
 -- line number
 o.number = true
 
+-- color scheme
+o.termguicolors = true
+
+-- global variables (g:)
+--vim.api.nvim_set_var("sonokai_style", "default")
+--vim.api.nvim_set_var("sonokai_style", "atlantis")
+vim.api.nvim_set_var("sonokai_style", "andromeda")
+--vim.api.nvim_set_var("sonokai_style", "shusia")
+--vim.api.nvim_set_var("sonokai_style", "maia")
+--vim.api.nvim_set_var("sonokai_style", "espresso")
+
