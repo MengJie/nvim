@@ -18,6 +18,8 @@ return require 'packer'.startup(
     use 'svermeulen/vimpeccable'
     -- color scheme
     use 'sainnhe/sonokai'
+    -- transparent background
+    use 'xiyaowong/nvim-transparent'
     -- better highlighting
     use 'nvim-treesitter/nvim-treesitter'
     -- nvim tree
@@ -34,6 +36,20 @@ return require 'packer'.startup(
     use 'aserowy/tmux.nvim'
     -- hop, easymotion
     use 'phaazon/hop.nvim'
+
+    -- lsp
+    use 'neovim/nvim-lspconfig'
+
+    -- completion
+    use 'hrsh7th/cmp-nvim-lsp'
+    use 'hrsh7th/cmp-buffer'
+    use 'hrsh7th/cmp-path'
+    use 'hrsh7th/cmp-cmdline'
+    use 'hrsh7th/nvim-cmp'
+    
+    -- vsnip
+    use 'hrsh7th/cmp-vsnip'
+    use 'hrsh7th/vim-vsnip'
 
     if packer_bootstrap then
       require('packer').sync()

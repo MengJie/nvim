@@ -3,6 +3,7 @@ MY_MODULES = {
   'opts',
   'setup',
   'mappings',
+  'autocmds',
   'stl',
 }
 
@@ -21,6 +22,7 @@ function unload_my_modules()
     for key, _ in pairs(package.loaded) do
       if key == module or key:sub(1, #prefix) == prefix then
         package.loaded[key] = nil
+        -- print("unload "..key)
       end
     end
   end
