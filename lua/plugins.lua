@@ -21,7 +21,11 @@ return require 'packer'.startup(
     -- transparent background
     use 'xiyaowong/nvim-transparent'
     -- better highlighting
-    use 'nvim-treesitter/nvim-treesitter'
+    use {
+      'nvim-treesitter/nvim-treesitter',
+      run = ':TSUpdate'
+    }
+    use 'nvim-treesitter/playground'
     -- nvim tree
     use {
       'kyazdani42/nvim-tree.lua',
@@ -50,6 +54,9 @@ return require 'packer'.startup(
     -- vsnip
     use 'hrsh7th/cmp-vsnip'
     use 'hrsh7th/vim-vsnip'
+
+    -- git
+    use 'airblade/vim-gitgutter'
 
     if packer_bootstrap then
       require('packer').sync()
