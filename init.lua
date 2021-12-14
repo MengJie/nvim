@@ -5,6 +5,7 @@ MY_MODULES = {
   'mappings',
   'autocmds',
   'stl',
+  'neovide',
 }
 
 function load_my_modules()
