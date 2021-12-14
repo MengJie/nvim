@@ -25,6 +25,14 @@ o.termguicolors = true
 -- no show '-- INSERT --'
 o.showmode = false
 
+o.swapfile = false
+o.splitbelow = true
+o.splitright = true
+o.colorcolumn = '80'
+o.ignorecase = true
+o.smartcase = true
+o.signcolumn = 'yes'
+
 -- global variables (g:)
 --vim.api.nvim_set_var("sonokai_style", "default")
 --vim.api.nvim_set_var("sonokai_style", "atlantis")

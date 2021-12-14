@@ -21,6 +21,11 @@ end)
 vp.nnoremap(';', ':')
 vp.inoremap('jj', '<ESC>')
 
+vp.nnoremap('<leader>vs', ':vs<CR>')
+vp.nnoremap('<leader>sp', ':sp<CR>')
+vp.nnoremap('<leader>on', ':on<CR>')
+vp.nnoremap('<leader>no', ':noh<CR>')
+
 -- leader q
 vp.nnoremap('<leader>q',  ':q<CR>')
 vp.nnoremap('<leader>fs', ':w<CR>')
