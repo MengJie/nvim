@@ -64,6 +64,9 @@ return require 'packer'.startup(
       requires = { 'kyazdani42/nvim-web-devicons' }
     }
 
+    -- lsp status
+    use 'nvim-lua/lsp-status.nvim'
+
     if packer_bootstrap then
       require('packer').sync()
     end

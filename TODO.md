@@ -1,3 +1,3 @@
 - [x] 显示Git行状态：添加，修改，删除
-- [ ] 显示 LSP Server 的状态
-- [ ] 更好的 statusline
+- [x] 显示 LSP Server 的状态
+- [x] 更好的 statusline
