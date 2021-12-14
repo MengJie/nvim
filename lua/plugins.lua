@@ -58,6 +58,12 @@ return require 'packer'.startup(
     -- git
     use 'airblade/vim-gitgutter'
 
+    -- lualine
+    use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'kyazdani42/nvim-web-devicons' }
+    }
+
     if packer_bootstrap then
       require('packer').sync()
     end

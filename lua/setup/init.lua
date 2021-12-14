@@ -5,6 +5,7 @@ local SETUP_MODULES = {
   'setup.hop',
   'setup.cmp',
   'setup.lsp',
+  'setup.lualine',
 }
 
 for _, module in pairs(SETUP_MODULES) do
