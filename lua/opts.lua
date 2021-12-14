@@ -22,6 +22,9 @@ o.wrap = false
 -- color scheme
 o.termguicolors = true
 
+-- no show '-- INSERT --'
+o.showmode = false
+
 -- global variables (g:)
 --vim.api.nvim_set_var("sonokai_style", "default")
 --vim.api.nvim_set_var("sonokai_style", "atlantis")
