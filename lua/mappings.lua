@@ -23,7 +23,7 @@ vp.inoremap('jj', '<ESC>')
 
 vp.nnoremap('<leader>vs', ':vs<CR>')
 vp.nnoremap('<leader>sp', ':sp<CR>')
-vp.nnoremap('<leader>on', ':on<CR>')
+vp.nnoremap('<leader>o', ':on<CR>')
 vp.nnoremap('<leader>no', ':noh<CR>')
 
 -- leader q
@@ -43,6 +43,10 @@ vp.nnoremap('<leader>ss', function() require 'telescope.builtin'.live_grep() end
 
 vp.nnoremap('<leader><leader>', function() require 'telescope.builtin'.commands() end)
 
+-- quickfix navigation
+vp.nnoremap({'silent'}, 'cn', ':cn<CR>')
+vp.nnoremap({'silent'}, 'cp', ':cp<CR>')
+
 -- window navigation
 vp.nnoremap('<C-j>', function() require 'tmux'.move_bottom() end)
 vp.nnoremap('<C-k>', function() require 'tmux'.move_top() end)
@@ -50,10 +54,10 @@ vp.nnoremap('<C-h>', function() require 'tmux'.move_left() end)
 vp.nnoremap('<C-l>', function() require 'tmux'.move_right() end)
 
 -- window resize
-vp.nnoremap('<M-j>', function() require 'tmux'.resize_bottom() end)
-vp.nnoremap('<M-k>', function() require 'tmux'.resize_top() end)
-vp.nnoremap('<M-h>', function() require 'tmux'.resize_left() end)
-vp.nnoremap('<M-l>', function() require 'tmux'.resize_right() end)
+-- vp.nnoremap('<M-j>', function() require 'tmux'.resize_bottom() end)
+-- vp.nnoremap('<M-k>', function() require 'tmux'.resize_top() end)
+-- vp.nnoremap('<M-h>', function() require 'tmux'.resize_left() end)
+-- vp.nnoremap('<M-l>', function() require 'tmux'.resize_right() end)
 
 -- LSP
 vp.nnoremap({'silent'}, 'gd',    ':lua vim.lsp.buf.definition()<CR>')

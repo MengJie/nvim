@@ -32,6 +32,11 @@ o.colorcolumn = '80'
 o.ignorecase = true
 o.smartcase = true
 o.signcolumn = 'yes'
+o.scrolloff = 10
+o.cursorline = true
+
+-- yank to system clipboard
+o.clipboard = 'unnamedplus'
 
 -- global variables (g:)
 --vim.api.nvim_set_var("sonokai_style", "default")
